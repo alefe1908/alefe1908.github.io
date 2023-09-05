@@ -3,13 +3,13 @@
     padding: 40px 20px;
     margin: 0 auto ;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 4fr;
     gap: 100px;
     align-items: center;
 }
 
 .introducao h1 {
-    font-size: 4.5rem;
+    font-size: 7.5rem;
     line-height: 1.125;
     margin-bottom: 30px;
     position: relative;
@@ -20,7 +20,7 @@
     display: block;
     width: 130px;
     height: 100px;
-    background: url(img/detalhe.svg) no-repeat;
+    background: url(fotos/Design\ sem\ nome\ \(3\).png) no-repeat;
     position: absolute;
     top: -15px;
     left: -40px;
@@ -30,6 +30,11 @@
 .introducao p {
     font-size: 1.5rem;
     color: #525252;
+}
+
+.introducao img {
+    border-radius: 4px;
+    margin-top: -60px;
 }
 
 @media (max-width: 1000px) {
