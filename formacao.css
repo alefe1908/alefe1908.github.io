@@ -146,6 +146,7 @@
     }
     .formacao .subtitulo {
         color: #ffffff;
+        display: none;
     
     }
     .formacao-texto {

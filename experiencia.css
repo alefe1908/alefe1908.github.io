@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
+    margin-top: -120px;
 }
 
 .experiencia .subtitulo {
@@ -89,6 +90,9 @@
     }
     .experiencia .subtitulo {
         color: #141414;
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 600;
     }
     .experiencia-texto {
         font-size: 1.25rem;
