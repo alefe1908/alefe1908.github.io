@@ -6,55 +6,66 @@
     <meta name="description" content="Desenvolvedor front end">
     <title> Marcelly & Alefe</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="fotos/Logotipo nail designer rosê e branco delicado (1).png"" alt="..." height="36">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#experiencia">Nossa Historia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#formacao">Cerimônia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#local">Local & Data</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Lista de Presente</a>
-                  </li>
-                  
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <header class="header">
+        <img src="fotos/Logotipo nail designer rosê e branco delicado (1).png" alt="lobo">
+        <nav >
+            <ul class="menu-header">
+                <li> <a href="#experiencia">Nossa Historia</a></li>
+                <li> <a href="#formacao">Local & Data</a></li>
+                <li> <a href="#contato">Lista Presentes </a></li>
+                
+            </ul>
+        </nav>
     </header>
 
     <main class="introducao">
-        <img src="fotos/Banner frete grátis para web site amarelo.png" alt="">
+        <div class="slide-container">
+            <div class="slider">
+                <div class="slides">
+                    <!--Radio Buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+            
+                    <!--Fim Radio Buttons-->
+            
+                     <!--Slide Images-->
+            
+                    <div class="slide first">
+                        <img src="img/slide-image-marriage/img1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-image-marriage/img2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-image-marriage/img3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-image-marriage/img4.jpeg" alt="">
+                </div>
+                <!--Fim slide Images-->
+            
+                 <!--Navigation auto-->
+                 <div class="navigation-marcado">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                 </div>
+            </div>
+                
+                </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <script src="slide.js"></script>
+        </div>
     </main>
 
     <section class="experiencia" aria-label="experiencia" id="experiencia">
@@ -104,8 +115,8 @@
         </div>
 
     </section>
-<div id="formacao"></div>
-    <section class="formacao"  aria-label="Formação">
+
+    <section class="formacao" id="formacao" aria-label="Formação">
         <div class="formacao-container">
             <h2 class="subtitulo">cerimônia
             </h2>
@@ -118,8 +129,7 @@
                 <ul class="faculdade-lista">
                     <li class="faculdade">
                         <span class="faculdade-tipo">cerimônia</span>
-                        <h3 class="faculdade-curso">15:30 é brquando os convidados chegam, 
-                        a cerimônia começa e toda aquela parte bonita do casamentos, não queremos nada menos que lágrimas de alegria. 🥹</h3>
+                        <h3 class="faculdade-curso">15:30 é quando os convidados chegam, a cerimônia começa e toda aquela parte bonita do casamentos, não queremos nada menos que lágrimas de alegria. 🥹</h3>
                       
                     </li>
 
@@ -135,20 +145,20 @@
                         
                     </li>
                 </ul>
-                <div class="formacao-extra" id="local">
+                <div class="formacao-extra">
                     <div class="cursos">
                         <h3>Local do evento</h3>
                         <ul>
-                            <li>São João de Meritir, RJ </li>
-                            <li>R. Ver. Luís Marquês do Nascimento, 76 - Centro
+                            <li>São João de Meritir, RJ <span>56h</span></li>
+                            <li>R. Ver. Luís Marquês do Nascimento, 76 - Centro<span>72h</span></li>
                         </ul>
                     </div>
 
                     <div class="idiomas">
-                        <h3>como chegar</h3>
+                        <h3>Idiomas</h3>
                         <ul>
-                            <li>Waze<span>/ <a class="rota" href="https://www.waze.com/en/live-map/directions/br/rj/sitio-realize?place=ChIJSc7ZJv9lmQARfO0JZa84_BY">Sitio Realize</a> </span></li>
-                            <li>Maps<span>/ <a class="rota" href="https://maps.app.goo.gl/bdeGWVeCrZudg5SCA">Sitio Realize</a></span></li>
+                            <li>Inglês<span>/ Fluente</span></li>
+                            <li>Espanhol<span>/ Intermediario</span></li>
                         </ul>
                     </div>
 
