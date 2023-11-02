@@ -11,6 +11,16 @@
     gap: 100px;
     align-items: center;
 }
+.footer-container h1 {
+    color: #cccccc;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.footer-container span {
+    color: #bc2649;
+    font-size: 3rem;
+}
 
 .footer-texto {
     font-size: 1.5rem;
