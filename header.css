@@ -8,6 +8,9 @@
     margin-top: -40px;
     
 }
+.foto-banner {
+    margin: -15px;
+}
 
 .menu-header {
     display: flex;
@@ -44,3 +47,4 @@
         border-radius: 4px;
     }
 }
+
